@@ -31,6 +31,7 @@ export default function Programmers() {
   const [list, setList] = useState(listOfAwesome)
   const [programmerId, setProgrammerId] = useState(null)
 
+  console.log(setList)
   const getNameOfFeatured = () => {
     const pickedProgrammer = list.filter(ele => {
       return ele.id === programmerId
